@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.3
+
+Dependency updates to resolve security and compatibility issues.
+
 ## 1.4.2
 
 ### Changed
