@@ -8,11 +8,11 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import bContainer from 'bootstrap-vue/es/components/layout/container';
+import { BContainer } from 'bootstrap-vue';
 
 export default Vue.extend({
     components: {
-        'b-container': bContainer,
+        'b-container': BContainer,
     }
 })
 </script>

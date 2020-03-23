@@ -136,7 +136,8 @@ export default Vue.extend({
     },
     computed: {
         active: function() {
-            return this.steps[this.index].key;
+            const tany = this as any;
+            return tany.steps[tany.index].key;
         }
     },
 })

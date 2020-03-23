@@ -8,12 +8,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import bAlert from 'bootstrap-vue/es/components/alert/alert';
+import { BAlert } from 'bootstrap-vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 export default Vue.extend({
     components: {
-        'b-alert': bAlert,
+        'b-alert': BAlert,
         'font-awesome-icon': FontAwesomeIcon,
     },
     computed: {
