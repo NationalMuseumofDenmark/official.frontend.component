@@ -111,6 +111,10 @@
     </n-section>
 
     <n-section>
+      <d-examples-dropdown />
+    </n-section>
+
+    <n-section>
       <h2>Rich Text</h2>
       
       <p>
@@ -181,6 +185,13 @@
             <n-form-field :id="`some-errors-${theme}`" label="Felt med fejl" type="text" v-model="alwayserror">
               <div>En fejl her.</div>
             </n-form-field>
+
+            <n-form-dropdown :id="`gender-${theme}`" v-model="gender" label="Køn" :options="[
+              { key: 'm', value: 'Mand' },
+              { key: 'f', value: 'Kvinde' },
+              { key: 'a', value: 'Andet' },
+              { key: 'i', value: 'Ikke oplyst' }
+            ]" />
 
             <n-form-field 
               :id="`vej-${theme}`" 
@@ -261,6 +272,7 @@ export default Vue.extend({
     checked: true,
     yesno: null,
     alwayserror: '',
+    gender: '',
   }),
   computed: {
     noCharacters(): string {
