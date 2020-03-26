@@ -4,7 +4,8 @@
 }
 
 .n-style input, input.n-style,
-.n-style textarea.form-control, textarea.form-control.n-style {
+.n-style textarea.form-control, textarea.form-control.n-style,
+.n-style select {
     border: $input-border-width solid $color-white;
     border-radius: 0;
 
@@ -20,7 +21,7 @@
     }
 }
 
-.n-style input, input.n-style {
+.n-style input, input.n-style, .n-style select, select.n-style {
     height: 44px;
 }
 
@@ -34,6 +35,10 @@ section.white input.n-style,
 section.white .n-style textarea.form-control,
 section.white textarea.form-control.n-style {
     border: $input-border-width solid $color-darkblue;
+}
+
+section.white select {
+    border: $input-border-width solid $color-lightgrey;
 }
 
 .n-style fieldset .form-text.text-muted,
