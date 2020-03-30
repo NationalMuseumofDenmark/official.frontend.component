@@ -59,6 +59,18 @@
 				<n-button variant="primary" icon="thumbs-up">Approve!</n-button>
 			</div>
 
+			<h3>Overridden width</h3>
+
+			<p>There is a `width` property to conveniently set the button width manually.</p>
+
+<pre>
+&lt;n-button variant="primary" width="300px"&gt;Approve!&lt;/n-button&gt;
+</pre>
+
+			<div style="margin-top: 1.5em">
+				<n-button variant="primary" width="300px">Approve!</n-button>
+			</div>
+
       <h3>Properties</h3>
 
 			<d-helpers-property-table :items="[
