@@ -17,7 +17,7 @@
       
     </n-nav-topbar>
     <router-view />
-    <n-footer>
+    <n-footer variant="darkblue">
       <b-row>
         <b-col><img src="../assets/images/BL.svg" style="width: 120px" /></b-col>
         <b-col><n-logo white :width="100" /></b-col>
