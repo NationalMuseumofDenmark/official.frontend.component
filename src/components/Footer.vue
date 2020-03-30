@@ -1,5 +1,5 @@
 <template>
-    <footer class="standard">
+    <footer :class="['n-footer', variant]">
         <b-container>
             <slot></slot>
         </b-container>
@@ -10,23 +10,37 @@
 import Vue from 'vue';
 import { BContainer } from 'bootstrap-vue';
 
+const variants : string[] = ['darkblue', 'lightgrey'];
+
 export default Vue.extend({
     components: {
         'b-container': BContainer,
+    },
+    props: {
+        variant: {
+            type: String,
+            default: 'darkblue',
+            validator: (value: string) => variants.indexOf(value) !== -1,
+        }
     }
 })
 </script>
 
-
 <style lang="scss" scoped>
 @import '../assets/scss/base/colors.scss';
 
-
-.standard {
+.n-footer {
     font-family: 'Nationale';
 
-    background-color: $color-darkblue;
-    color: $color-white;
+    &.darkblue {
+        background-color: $color-darkblue;
+        color: $color-white;
+    }
+
+    &.lightgrey {
+        background-color: $color-lightgrey;
+        color: $color-white;
+    }
 
     padding: 4em 0;
 
