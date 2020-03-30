@@ -1,18 +1,20 @@
 <template>
-    <section class="base n-style" v-bind:class="[theme, { vfill: verticalFill, padded: !noPad }]">
-        <template v-if="noGrid">
+    <section class="base n-style" v-bind:class="[theme, { vfill: verticalFill, padded: !noPad, 'suppress-divider': suppressDivider }]">
+
+        <template v-if="noContainer">
             <slot></slot>
         </template>
+
         <template v-else>
             <b-container :fluid="fluid">
                 <b-row>
-                    <b-col>
+                    <b-col :class="{ 'full-width': fullWidth }">
                         <slot></slot>
                     </b-col>
                 </b-row>
             </b-container>
         </template>
-        
+
     </section>
 </template>
 
@@ -33,10 +35,12 @@ export default Vue.extend({
             default: 'white',
         },
         verticalFill: Boolean,
-        noGrid: Boolean,
+        noContainer: Boolean,
         slim: Boolean,
         fluid: Boolean,
         noPad: Boolean,
+        suppressDivider: Boolean,
+        fullWidth: Boolean,
     },
 });
 </script>
@@ -56,7 +60,7 @@ export default Vue.extend({
     }
 }
 
-.white + .white .container::before {
+.white + .white .container::before:not(.suppress-divider) {
     content: "--------------";
     color: transparent;
     border-top: 4px solid $color-lightgrey;
@@ -106,6 +110,11 @@ export default Vue.extend({
 
 .padded {
     padding: 5em 0;
+}
+
+.full-width {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 </style>

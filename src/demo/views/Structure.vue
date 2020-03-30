@@ -269,6 +269,12 @@ export default Vue.extend({
         description: 'Whether the embedded bootstrap grid should be fluid. Ignored when the no-container option is on.',
       },
       {
+        name: 'full-width',
+        type: 'bool',
+        default: 'false',
+        description: 'If set, the section will have no side padding, and will fill up the entire width.'
+      },
+      {
         name: 'no-container',
         type: 'bool',
         default: 'false',

@@ -110,9 +110,7 @@
 			<d-examples-wait />
 		</n-section>		
 
-		<n-section>
-			<d-examples-progress />
-		</n-section>
+		<d-examples-progress />
 
 		<n-section>
 			<d-examples-dot-progress />
