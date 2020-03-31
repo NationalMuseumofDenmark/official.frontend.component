@@ -102,24 +102,27 @@
 
     </n-section>
 
-		<n-section>
-			<d-examples-alert />
-		</n-section>
+	<n-section>
+		<d-examples-modal />
+	</n-section>
 
-		<n-section>
-			<d-examples-wait />
-		</n-section>
+	<n-section>
+		<d-examples-collapsible />
+	</n-section>
 
-		<n-section>
-			<d-examples-collapsible />
-		</n-section>
+	<n-section>
+		<d-examples-alert />
+	</n-section>
 
+	<n-section>
+		<d-examples-wait />
+	</n-section>		
 
-		<d-examples-progress />
+	<d-examples-progress />
 
-		<n-section>
-			<d-examples-dot-progress />
-		</n-section>
+	<n-section>
+		<d-examples-dot-progress />
+	</n-section>
 
   </div>
 </template>
