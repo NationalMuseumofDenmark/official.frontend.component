@@ -108,7 +108,12 @@
 
 		<n-section>
 			<d-examples-wait />
-		</n-section>		
+		</n-section>
+
+		<n-section>
+			<d-examples-collapsible />
+		</n-section>
+
 
 		<d-examples-progress />
 
