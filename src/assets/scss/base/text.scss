@@ -60,7 +60,7 @@ img.full + p {
 }
 
 a {
-    $a-color: lighten($color-darkred, 25%);
+    $a-color: $color-lightgrey;
 
     color: $a-color;
 
