@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.0.0 (beta 0)
+
+- (BREAKING) Add blue ribbon variant of the small StepProgress
+- Set button width manually by prop.
+- Dropdown component.
+- Collapsible component.
+- Model component.
+- Topbar covid-19 variant.
+- Introduce a lightgrey variant of the footer.
+- Standard links are now lightgrey.
+
 ## 1.4.3
 
 Dependency updates to resolve security and compatibility issues.
