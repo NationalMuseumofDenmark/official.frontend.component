@@ -1,12 +1,10 @@
 <template>
   <div id="app">
-    <n-nav-topbar @logoClick="logoClick">
+    <n-nav-topbar @logoClick="logoClick" variant="white">
       <b-nav-item to="/structure">Structure</b-nav-item>
       <b-nav-item to="/components">Components</b-nav-item>
       <b-nav-item to="/forms">Forms</b-nav-item>
-      <b-nav-item to="/features">Features</b-nav-item>
       <b-nav-item to="/bootstrap-styling">Styling</b-nav-item>
-
       <b-nav-item-dropdown id="example-dropdown" text="Examples">
         <b-dropdown-item to="/examples/step-page">Auto-sliding introduction</b-dropdown-item>
         <b-dropdown-item to="/examples/rich-text">Rich text example</b-dropdown-item>
@@ -14,9 +12,12 @@
         <b-dropdown-item to="/examples/text-page">Full text page</b-dropdown-item>
         <b-dropdown-item to="/examples/full">Sections and elements</b-dropdown-item>
       </b-nav-item-dropdown>
+      <b-nav-item to="/features" class="button">Features</b-nav-item>
       
     </n-nav-topbar>
+
     <router-view />
+
     <n-footer variant="darkblue">
       <b-row>
         <b-col><img src="../assets/images/BL.svg" style="width: 120px" /></b-col>

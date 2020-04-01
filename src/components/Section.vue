@@ -60,7 +60,7 @@ export default Vue.extend({
     }
 }
 
-.white + .white:not(.suppress-divider) .container::before {
+section.white + section.white:not(.suppress-divider) .container::before {
     content: "--------------";
     color: transparent;
     border-top: 4px solid $color-lightgrey;
