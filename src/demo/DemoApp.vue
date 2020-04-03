@@ -12,7 +12,7 @@
         <b-dropdown-item to="/examples/text-page">Full text page</b-dropdown-item>
         <b-dropdown-item to="/examples/full">Sections and elements</b-dropdown-item>
       </b-nav-item-dropdown>
-      <b-nav-item to="/features" class="button">Features</b-nav-item>
+      <b-nav-item to="/features" class="button"><span class="button-inner">Features</span></b-nav-item>
       
     </n-nav-topbar>
 
