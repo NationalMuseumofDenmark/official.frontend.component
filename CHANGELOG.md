@@ -2,7 +2,8 @@
 
 ## 2.0.0 (beta)
 
-- (BREAKING) Add blue ribbon variant of the small StepProgress
+- (BREAKING) Add blue ribbon variant of the small StepProgress.
+- Option to collapse file list when it grows longer.
 - Set button width manually by prop.
 - Dropdown component.
 - Collapsible component.
