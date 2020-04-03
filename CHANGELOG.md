@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.0 (beta 0)
+## 2.0.0 (beta)
 
 - (BREAKING) Add blue ribbon variant of the small StepProgress
 - Set button width manually by prop.
