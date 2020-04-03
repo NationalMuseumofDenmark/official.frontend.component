@@ -24,11 +24,32 @@
         <h3>Example</h3>
 
         <n-file-list 
+            auto-collapse
             :files="[
                 { file: { guid: 'id1', fileName: 'thesis.docx' }, key: 'id1', filename: 'thesis.docx' },
                 { file: { guid: 'id2', fileName: 'video.mp4' }, key: 'id2', filename: 'video.mp4' },
                 { file: { guid: 'id3', fileName: 'music.mp3' }, key: 'id3', filename: 'music.mp3' },
                 { file: { guid: 'id4', fileName: 'recording.mp4'}, key: 'id4', filename: 'recording.mp4' },
+                { file: { guid: 'id5', fileName: 'id5.docx' }, key: 'id5', filename: 'thesis.docx' },
+                { file: { guid: 'id6', fileName: 'id6.mp4' }, key: 'id6', filename: 'video.mp4' },
+                { file: { guid: 'id7', fileName: 'id7.mp3' }, key: 'id7', filename: 'music.mp3' },
+                { file: { guid: 'id8', fileName: 'id8.mp4'}, key: 'id8', filename: 'recording.mp4' },
+                { file: { guid: 'id9', fileName: 'id9.docx' }, key: 'id9', filename: 'thesis.docx' },
+                { file: { guid: 'id10', fileName: 'id10.mp4' }, key: 'id10', filename: 'video.mp4' },
+                { file: { guid: 'id11', fileName: 'id11.mp3' }, key: 'id11', filename: 'music.mp3' },
+                { file: { guid: 'id12', fileName: 'id12.mp4'}, key: 'id12', filename: 'recording.mp4' },
+                { file: { guid: 'id13', fileName: 'id13.docx' }, key: 'id13', filename: 'thesis.docx' },
+                { file: { guid: 'id14', fileName: 'id14.mp4' }, key: 'id14', filename: 'video.mp4' },
+                { file: { guid: 'id15', fileName: 'id15.mp3' }, key: 'id15', filename: 'music.mp3' },
+                { file: { guid: 'id16', fileName: 'id16.mp4'}, key: 'id16', filename: 'recording.mp4' },
+                { file: { guid: 'id17', fileName: 'id17.docx' }, key: 'id17', filename: 'thesis.docx' },
+                { file: { guid: 'id18', fileName: 'id18.mp4' }, key: 'id18', filename: 'video.mp4' },
+                { file: { guid: 'id19', fileName: 'id19.mp3' }, key: 'id19', filename: 'music.mp3' },
+                { file: { guid: 'id20', fileName: 'id20.mp4'}, key: 'id20', filename: 'recording.mp4' },
+                { file: { guid: 'id21', fileName: 'id21.docx' }, key: 'id21', filename: 'thesis.docx' },
+                { file: { guid: 'id22', fileName: 'id22.mp4' }, key: 'id22', filename: 'video.mp4' },
+                { file: { guid: 'id23', fileName: 'id23.mp3' }, key: 'id23', filename: 'music.mp3' },
+                { file: { guid: 'id24', fileName: 'id24.mp4'}, key: 'id24', filename: 'recording.mp4' },
             ]"
             @open="log('open: ' + $event.fileName)"
             @delete="log('delete: ' + $event.fileName)"
@@ -56,6 +77,24 @@
                     default: '[]',
                     description: 'List of files with file object, filename and key.',
                 },
+                {
+                    name: 'auto-collapse',
+                    type: 'boolean',
+                    default: 'false',
+                    description: 'Make the list collapse when the number of files exceed 6.',
+                },
+                {
+                    name: 'expand-link-text',
+                    type: 'string',
+                    default: '&quot;Se alle&quot;',
+                    description: 'The text for the expansion link when the list is collapsed.',
+                },
+                {
+                    name: 'collapse-link-text',
+                    type: 'string',
+                    default: '&quot;Se færre&quot;',
+                    description: 'The text for the collapse link when the list is expanded.',
+                }
             ]"
         />
 
