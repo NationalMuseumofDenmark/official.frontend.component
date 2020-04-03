@@ -127,7 +127,7 @@ export default Vue.extend({
                 a.nav-link {
                     color: $color-black;
                     font-weight: bold;
-                    padding: 0 0 0.5rem 0;
+                    padding: 0 0 0.4rem 0;
 
                     &.active, &.router-link-active {
                         border-bottom: 4px solid $color-lightgrey;
@@ -145,6 +145,11 @@ export default Vue.extend({
                         &.active, &.router-link-active {
                             background-color: $color-lightgrey;
                             color: $color-white;
+
+                            .button-inner {
+                                padding-bottom: 9px;
+                                border-bottom: 4px solid white;
+                            }
                         }
 
                     }
