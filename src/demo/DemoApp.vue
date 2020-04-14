@@ -13,6 +13,7 @@
         <b-dropdown-item to="/examples/full">Sections and elements</b-dropdown-item>
       </b-nav-item-dropdown>
       <b-nav-item to="/features" class="button"><span class="button-inner">Features</span></b-nav-item>
+      <b-nav-item to="/login" class="right bright">Log ind</b-nav-item>
       
     </n-nav-topbar>
 
