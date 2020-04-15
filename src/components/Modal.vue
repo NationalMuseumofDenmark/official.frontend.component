@@ -47,6 +47,7 @@ export default Vue.extend({
 <style lang="scss">
 
 @import '../assets/scss/base/colors.scss';
+@import '../assets/scss/base/responsive.scss';
 
 .modal-dialog {
     .modal-content {
@@ -55,6 +56,10 @@ export default Vue.extend({
 
         .modal-body {
             padding: 2.5em 3.5em;
+
+            @include mobile-only() {
+                padding: 1em;
+            }
         }
     }
 }
