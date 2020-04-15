@@ -70,30 +70,7 @@ export default Vue.extend({
 
 <style lang="scss">
 @import '../../assets/scss/base/colors.scss';
-
-@mixin mobile-only {
-    @media (max-width: 767px) {
-        @content;
-    }
-}
-
-@mixin tablet-up {
-    @media (min-width: 768px) {
-        @content;
-    }
-}
-
-.display-tablet-up {
-    @include mobile-only() {
-        display: none;
-    }
-}
-
-.display-mobile-only {
-    @include tablet-up() {
-        display: none;
-    }
-}
+@import '../../assets/scss/base/responsive.scss';
 
 .topbar-nav.n-style {
 
