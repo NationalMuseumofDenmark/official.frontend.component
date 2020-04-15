@@ -25,14 +25,7 @@
                     </div>
                     
                     <n-file-list 
-                        :files="[
-                            'tekster.docx',
-                            'recording.mp4',
-                            'videoer.mp4',
-                            'musik.mp3',
-                            'billede_fra_bolig_1.jpg',
-                            'billede_fra_bolig_2.jpg',
-                        ]"
+                        :files="augmentedFiles"
                         @open="log('brugeren åbner ' + $event)"
                         @delete="log('brugeren vil slette ' + $event)"
                     />
@@ -51,6 +44,23 @@
 import Vue from 'vue';
 
 export default Vue.extend({
+    data() {
+        return {
+            files: [
+                'tekster.docx',
+                'recording.mp4',
+                'videoer.mp4',
+                'musik.mp3',
+                'billede_fra_bolig_1.jpg',
+                'billede_fra_bolig_2.jpg',
+            ],
+        };
+    },
+    computed: {
+        augmentedFiles() {
+            return this.files.map(file => ({ file, key: file, filename: file  }));
+        },
+    },
     methods: {
         log(message: string): void {
             window.alert(message);
