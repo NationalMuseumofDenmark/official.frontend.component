@@ -11,6 +11,7 @@
 - Topbar covid-19 variant.
 - Introduce a lightgrey variant of the footer.
 - Standard links are now lightgrey.
+- Fix file upload example list.
 
 ## 1.4.3
 
