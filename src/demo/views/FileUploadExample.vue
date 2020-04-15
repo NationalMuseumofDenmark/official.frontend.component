@@ -43,8 +43,18 @@
 <script lang="ts">
 import Vue from 'vue';
 
+interface IFileDescription {
+    file: any,
+    key: string,
+    filename: string,
+}
+
+interface IData {
+    files: string[]
+}
+
 export default Vue.extend({
-    data() {
+    data(): IData {
         return {
             files: [
                 'tekster.docx',
@@ -57,7 +67,7 @@ export default Vue.extend({
         };
     },
     computed: {
-        augmentedFiles() {
+        augmentedFiles(): IFileDescription[]  {
             return this.files.map(file => ({ file, key: file, filename: file  }));
         },
     },
