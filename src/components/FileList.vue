@@ -139,7 +139,7 @@ export default Vue.extend({
     padding: 100px 0 0 0; 
 	
   /* "transparent" only works here because == rgba(0,0,0,0) */
-    background-image: linear-gradient(to bottom, transparent, white);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.01), white);
   }
 }
 
