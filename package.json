@@ -26,7 +26,7 @@
     "@types/lodash": "^4.14.149",
     "@types/vuelidate": "^0.7.11",
     "moment": "^2.24.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "terser": "^4.6.7",
     "vue-router": "^3.1.6",
     "@vue/cli-plugin-babel": "^4.2.3",
